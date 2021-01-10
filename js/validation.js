@@ -2,12 +2,15 @@ $('#awesome-form').validate({
 	debug: true,
 	rules: {
 		fullnameinput: {
-			required: true,
-			min: 3
+			required: true
 		},
 		inputBirthData: {
 			required: true,
 			date: true,
+		},
+		inputPhoneNumber: {
+			required: true,
+			pattern: /\(\d{2,}\) \d{4,}\-\d{4}/
 		},
 		inputCPF: {
 			cpfBR: true,
@@ -29,16 +32,15 @@ $('#awesome-form').validate({
 		},
 		inputCardNumber: {
 			creditcard: true,
-			required: true,
-			digits: true
+			required: true
 		},
 		inputPrintName: {
 			lettersonly: true,
 			required: true
 		},
 		inputAddress: {
-			lettersonly: true,
-			required: true
+			letterswithbasicpunc: true,
+			required: true,
 		},
 		inputCity: {
 			lettersonly: true,
@@ -49,17 +51,11 @@ $('#awesome-form').validate({
 			pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/
 		}
 	},
-	// messages: {
-	// 	fullnameinput: {
-	// 		required: "Please specify your name",
-	// 	},
-	// 	inputEmail: {
-	// 		required: "We need your email address to contact you",
-	// 		email: "Your email address must be in the format of name@domain.com"
-	// 	}
-	// },
 	validClass: "border-success border-2",
-	invalidClass: "border-danger border-2",
+	errorClass: "border-danger border-2",
+	success: function (label) {
+		label.addClass("valid").text("Ok!")
+	},
+
 	submitHandler: function () { alert("Submitted!") }
 });
-
