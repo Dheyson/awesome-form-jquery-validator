@@ -43,19 +43,40 @@ $('#awesome-form').validate({
 			required: true,
 		},
 		inputCity: {
-			lettersonly: true,
 			required: true
 		},
 		inputPassword: {
 			required: true,
 			pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/
+		},
+		inputNeight: {
+			required: true
+		},
+		inputMonthCard: {
+			required: true,
+			pattern: /^(0?[1-9]|1[012])$/,
+			min: 01,
+			max: 12,
+			digits: true
+		},
+		inputYearCard: {
+			required: true,
+			min: 18,
+			max: 28,
+		},
+		inputCVV: {
+			required: true,
+			pattern: /^[0-9]{3,4}$/
 		}
 	},
 	validClass: "border-success border-2",
 	errorClass: "border-danger border-2",
 	success: function (label) {
-		label.addClass("valid").text("Ok!")
+		label.addClass("valid").text("Everything Ok! 🎉")
 	},
 
-	submitHandler: function () { alert("Submitted!") }
+	submitHandler: function (data) {
+		console.log(data);
+		alert("Submitted!", data);
+	}
 });

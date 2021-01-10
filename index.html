@@ -74,16 +74,20 @@
 						</div>
 					</div>
 					<div class="row my-2">
-						<div class="col-md-6">
-							<label for="inputCity" class="form-label lead">City</label>
-							<input type="text" class="form-control border border-primary rounded-0" name="inputCity" id="inputCity">
+						<div class="col-md-4 col-lg-4">
+								<label for="inputNeight" class="form-label lead">Neightboorhood</label>
+								<input type="text" class="form-control border border-primary rounded-0" name="inputNeight" id="inputNeight"
+									placeholder="" />
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-4">
 							<label for="inputState" class="form-label lead">State</label>
 							<select id="inputState" name="inputState" class="form-select border border-primary rounded-0">
-								<option selected>Choose...</option>
-								<option>...</option>
+								<option value=""></option>
 							</select>
+						</div>
+						<div class="col-md-4">
+							<label for="inputCity" class="form-label lead">City</label>
+							<input type="text" class="form-control border border-primary rounded-0" name="inputCity" id="inputCity" aria-placeholder="Choose a city" />
 						</div>
 					</div>
 				</div>
@@ -104,11 +108,11 @@
 					<div class="row my-2">
 						<div class="col-md-4 col-lg-4 col-sm-12">
 							<label for="inputMonthCard" class="form-label lead">Month Card</label>
-							<input type="text" class="form-control border border-primary rounded-0" name="inputMonthCard" id="inputMonthCard" />
+							<input type="text" class="form-control border border-primary rounded-0" name="inputMonthCard" id="inputMonthCard" maxlength="2" />
 						</div>
 						<div class="col-md-4 col-lg-4 col-sm-12">
 							<label for="inputYearCard" class="form-label lead">Year Card</label>
-							<input type="text" class="form-control border border-primary rounded-0" name="inputYearCard" id="inputYearCard" />
+							<input type="text" class="form-control border border-primary rounded-0" name="inputYearCard" id="inputYearCard" minLenght="2" maxlength="2"/>
 						</div>
 						<div class="col-md-4 col-lg-4 col-sm-12">
 							<label for="inputCVV" class="form-label lead">CVV</label>
@@ -116,7 +120,6 @@
 						</div>
 					</div>
 				</div>
-
 				<div class="d-grid gap-4 col-4">
 					<button type="submit" class="btn btn-dark btn-lg text-uppercase">Submit</button>
 				</div>
@@ -132,5 +135,6 @@
 	<script type="text/javascript" src="js/validation.js"></script/>
 	<script type="text/javascript" src="js/custom-validators.js"></script/>
 	<script type="text/javascript" src="js/mask-validations.js"></script/>
+	<script type="text/javascript" src="js/viacep.js"></script/>
 </body>
 </html>
