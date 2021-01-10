@@ -35,11 +35,10 @@ $('#awesome-form').validate({
 			required: true
 		},
 		inputPrintName: {
-			lettersonly: true,
+			letterswithbasicpunc: true,
 			required: true
 		},
 		inputAddress: {
-			letterswithbasicpunc: true,
 			required: true,
 		},
 		inputCity: {
@@ -78,5 +77,6 @@ $('#awesome-form').validate({
 	submitHandler: function (data) {
 		console.log(data);
 		alert("Submitted!", data);
+		form.submit();
 	}
 });
