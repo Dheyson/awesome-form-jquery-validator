@@ -1,0 +1,20 @@
+html {
+	font-size: 16px;
+	box-sizing: border-box;
+	max-width: 100%;
+}
+
+body {
+	background-color: white;
+	color: #363636;
+}
+
+.background-backdrop {
+	background-color: #0005;
+	position: absolute;
+	z-index: 1;
+}
+
+.subtitle--orange-color {
+	color: #ff6100;
+}

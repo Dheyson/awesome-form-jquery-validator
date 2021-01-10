@@ -6,11 +6,104 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Awesome Form Validation</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/app.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+	<div class="container">
+		<h1 class="display-1 text-uppercase text-center">
+			📝 <u><span class="fw-bold subtitle--orange-color">Awesome</span></u>
+			<p>Form Validation</p>
+		</h1>
+		<p class="text-center h4 lead pe-lg-4">
+			A form validation with jquery validator and jquery mask 😄.
+		</p>
+		<div class="container-md my-5">
+			<form class="row g-3">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<div class="col-12">
+						<h2>
+							🧔 Personal info
+						</h2>
+					</div>
+					<div class="col-md-12">
+						<label for="fullnameinput" class="form-label lead">Full name</label>
+						<input type="text" class="form-control border border-primary rounded-0" id="fullnameinput">
+					</div>
+					<div class="col-md-12 my-2">
+						<label for="inputEmail4" class="form-label lead">Email</label>
+						<input type="email" class="form-control border border-primary rounded-0" id="inputEmail4">
+					</div>
+					<div class="col-md-12 my-2">
+						<label for="inputConfirmEmail" class="form-label lead">Confirm Email</label>
+						<input type="email" class="form-control border border-primary rounded-0" id="inputConfirmEmail" />
+					</div>
+					<div class="col-md-12 my-2">
+						<label for="inputPassword4" class="form-label lead">Password</label>
+						<input type="password" class="form-control border border-primary rounded-0" id="inputPassword4">
+					</div>
+					<div class="row my-2">
+						<div class="col-md-4 col-lg-4 col-sm-12">
+							<label for="inputZip" class="form-label lead">Zip</label>
+							<input type="text" class="form-control border border-primary rounded-0" id="inputZip">
+						</div>
+						<div class="col-md-8 col-lg-8 col-sm-12">
+							<label for="inputAddress" class="form-label lead">Address</label>
+							<input type="text" class="form-control border border-primary rounded-0" id="inputAddress"
+								placeholder="1234 Main St">
+						</div>
+					</div>
+					<div class="row my-2">
+						<div class="col-md-6">
+							<label for="inputCity" class="form-label lead">City</label>
+							<input type="text" class="form-control border border-primary rounded-0" id="inputCity">
+						</div>
+						<div class="col-md-6">
+							<label for="inputState" class="form-label lead">State</label>
+							<select id="inputState" class="form-select border border-primary rounded-0">
+								<option selected>Choose...</option>
+								<option>...</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<div class="col-12">
+						<h2>
+							💳 Payment info
+						</h2>
+					</div>
+					<div class="col-md-12">
+						<label for="inputCardNumber" class="form-label lead">Card Number</label>
+						<input type="text" class="form-control border border-primary rounded-0" id="inputCardNumber">
+					</div>
+					<div class="col-md-12 my-2">
+						<label for="inputPrintName" class="form-label lead">Card Print Name</label>
+						<input type="text" class="form-control border border-primary rounded-0" id="inputPrintName">
+					</div>
+					<div class="row my-2">
+						<div class="col-md-4 col-lg-4 col-sm-12">
+							<label for="inputMonthCard" class="form-label lead">Month Card</label>
+							<input type="text" class="form-control border border-primary rounded-0" id="inputMonthCard">
+						</div>
+						<div class="col-md-4 col-lg-4 col-sm-12">
+							<label for="inputYearCard" class="form-label lead">Year Card</label>
+							<input type="text" class="form-control border border-primary rounded-0" id="inputYearCard"
+								placeholder="1234 Main St">
+						</div>
+						<div class="col-md-4 col-lg-4 col-sm-12">
+							<label for="inputCVV" class="form-label lead">CVV</label>
+							<input type="text" class="form-control border border-primary rounded-0" id="inputCVV">
+						</div>
+					</div>
+				</div>
 
-
+				<div class="d-grid gap-4 col-4">
+					<button type="button" class="btn btn-dark btn-lg">Dark</button>
+				</div>
+			</form>
+		</div>
+	</div>
 
 	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
