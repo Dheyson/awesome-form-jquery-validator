@@ -19,48 +19,68 @@
 			A form validation with jquery validator and jquery mask 😄.
 		</p>
 		<div class="container-md my-5">
-			<form class="row g-3">
+			<form class="row g-3" id="awesome-form">
 				<div class="col-lg-12 col-md-12 col-sm-12">
-					<div class="col-12">
+					<div class="col-12 my-3">
 						<h2>
 							🧔 Personal info
 						</h2>
 					</div>
-					<div class="col-md-12">
-						<label for="fullnameinput" class="form-label lead">Full name</label>
-						<input type="text" class="form-control border border-primary rounded-0" id="fullnameinput">
+					<div class="row">
+						<div class="col-md-6 col-lg-6 col-sm-6">
+								<label for="fullnameinput" class="form-label lead">Full name</label>
+								<input type="text" class="form-control border border-primary rounded-0" name="fullnameinput" id="fullnameinput" />
+						</div>
+						<div class="col-md-3 col-lg-3 col-sm-3">
+								<label for="inputBirthData" class="form-label lead">Birth Date</label>
+								<input type="dateISO" class="form-control border border-primary rounded-0" name="inputBirthData" id="inputBirthData" />
+						</div>
+						<div class="col-md-3 col-lg-3 col-sm-3">
+								<label for="inputPhoneNumber" class="form-label lead">Phone Number</label>
+								<input type="phone" class="form-control border border-primary rounded-0" name="inputPhoneNumber" id="inputPhoneNumber" />
+						</div>
+					</div>
+					<div class="row my-3">
+						<div class="col-md-6 col-lg-6 col-sm-12">
+								<label for="inputCPF" class="form-label lead">CPF</label>
+								<input type="text" class="form-control border border-primary rounded-0" name="inputCPF" id="inputCPF" />
+						</div>
+						<div class="col-md-6 col-lg-6 col-sm-12">
+								<label for="inputCNPJ" class="form-label lead">CNPJ</label>
+								<input type="text" class="form-control border border-primary rounded-0" name="inputCNPJ" id="inputCNPJ" placeholder="Optional" />
+						</div>
 					</div>
 					<div class="col-md-12 my-2">
-						<label for="inputEmail4" class="form-label lead">Email</label>
-						<input type="email" class="form-control border border-primary rounded-0" id="inputEmail4">
+						<label for="inputEmail" class="form-label lead">Email</label>
+						<input type="email" class="form-control border border-primary rounded-0" name="inputEmail" id="inputEmail" />
 					</div>
 					<div class="col-md-12 my-2">
 						<label for="inputConfirmEmail" class="form-label lead">Confirm Email</label>
-						<input type="email" class="form-control border border-primary rounded-0" id="inputConfirmEmail" />
+						<input type="text" class="form-control border border-primary rounded-0" name="inputConfirmEmail" id="inputConfirmEmail" />
 					</div>
 					<div class="col-md-12 my-2">
-						<label for="inputPassword4" class="form-label lead">Password</label>
-						<input type="password" class="form-control border border-primary rounded-0" id="inputPassword4">
+						<label for="inputPassword" class="form-label lead">Password</label>
+						<input type="text" class="form-control border border-primary rounded-0" name="inputPassword" id="inputPassword" />
 					</div>
 					<div class="row my-2">
 						<div class="col-md-4 col-lg-4 col-sm-12">
 							<label for="inputZip" class="form-label lead">Zip</label>
-							<input type="text" class="form-control border border-primary rounded-0" id="inputZip">
+							<input type="text" class="form-control border border-primary rounded-0" name="inputZip" id="inputZip" placeholder="Optional" />
 						</div>
 						<div class="col-md-8 col-lg-8 col-sm-12">
 							<label for="inputAddress" class="form-label lead">Address</label>
-							<input type="text" class="form-control border border-primary rounded-0" id="inputAddress"
-								placeholder="1234 Main St">
+							<input type="text" class="form-control border border-primary rounded-0" name="inputAddress" id="inputAddress"
+								placeholder="" />
 						</div>
 					</div>
 					<div class="row my-2">
 						<div class="col-md-6">
 							<label for="inputCity" class="form-label lead">City</label>
-							<input type="text" class="form-control border border-primary rounded-0" id="inputCity">
+							<input type="text" class="form-control border border-primary rounded-0" name="inputCity" id="inputCity">
 						</div>
 						<div class="col-md-6">
 							<label for="inputState" class="form-label lead">State</label>
-							<select id="inputState" class="form-select border border-primary rounded-0">
+							<select id="inputState" name="inputState" class="form-select border border-primary rounded-0">
 								<option selected>Choose...</option>
 								<option>...</option>
 							</select>
@@ -68,38 +88,37 @@
 					</div>
 				</div>
 				<div class="col-lg-12 col-md-12 col-sm-12">
-					<div class="col-12">
+					<div class="col-12  my-3">
 						<h2>
 							💳 Payment info
 						</h2>
 					</div>
 					<div class="col-md-12">
 						<label for="inputCardNumber" class="form-label lead">Card Number</label>
-						<input type="text" class="form-control border border-primary rounded-0" id="inputCardNumber">
+						<input type="text" class="form-control border border-primary rounded-0" name="inputCardNumber" id="inputCardNumber" />
 					</div>
 					<div class="col-md-12 my-2">
 						<label for="inputPrintName" class="form-label lead">Card Print Name</label>
-						<input type="text" class="form-control border border-primary rounded-0" id="inputPrintName">
+						<input type="text" class="form-control border border-primary rounded-0" name="inputPrintName" id="inputPrintName" />
 					</div>
 					<div class="row my-2">
 						<div class="col-md-4 col-lg-4 col-sm-12">
 							<label for="inputMonthCard" class="form-label lead">Month Card</label>
-							<input type="text" class="form-control border border-primary rounded-0" id="inputMonthCard">
+							<input type="text" class="form-control border border-primary rounded-0" name="inputMonthCard" id="inputMonthCard" />
 						</div>
 						<div class="col-md-4 col-lg-4 col-sm-12">
 							<label for="inputYearCard" class="form-label lead">Year Card</label>
-							<input type="text" class="form-control border border-primary rounded-0" id="inputYearCard"
-								placeholder="1234 Main St">
+							<input type="text" class="form-control border border-primary rounded-0" name="inputYearCard" id="inputYearCard" />
 						</div>
 						<div class="col-md-4 col-lg-4 col-sm-12">
 							<label for="inputCVV" class="form-label lead">CVV</label>
-							<input type="text" class="form-control border border-primary rounded-0" id="inputCVV">
+							<input type="text" class="form-control border border-primary rounded-0" name="inputCVV" id="inputCVV">
 						</div>
 					</div>
 				</div>
 
 				<div class="d-grid gap-4 col-4">
-					<button type="button" class="btn btn-dark btn-lg">Dark</button>
+					<button type="submit" class="btn btn-dark btn-lg text-uppercase">Submit</button>
 				</div>
 			</form>
 		</div>
@@ -110,10 +129,7 @@
 	<script type="text/javascript" src="js/jquery.mask.min.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/additional-methods.min.js"></script>
-	<script type="text/javascript" src="js/localization/messages_pt_BR.js"></script>
-	<script type="text/javascript">
-
-	</script>
+	<script type="text/javascript" src="js/validation.js"></script/>
+	<script type="text/javascript" src="js/custom-validators.js"></script/>
 </body>
-
 </html>
